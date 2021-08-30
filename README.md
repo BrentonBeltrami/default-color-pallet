@@ -1,29 +1,94 @@
-# Next.js + Tailwind CSS Example
+# Default Color Palette
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
-
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
-
-## Preview
-
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+This is my default color palette. It is displayed in react using next.js.
 
 ## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+Paste the following into `tailwind.config.js`:
 ```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+			colors: {
+				background: {
+					50: "#ffffff",
+					100: "#ffffff",
+					200: "#ffffff",
+					300: "#ffffff",
+					400: "#ffffff",
+					500: "#f5f5f5",
+					600: "#ebebeb",
+					700: "#e1e1e1",
+					800: "#d7d7d7",
+					900: "#cdcdcd",
+				},
+				type: {
+					50: "#656565",
+					100: "#5b5b5b",
+					200: "#515151",
+					300: "#474747",
+					400: "#3d3d3d",
+					500: "#333333",
+					600: "#292929",
+					700: "#1f1f1f",
+					800: "#151515",
+					900: "#0b0b0b",
+				},
+				primary: {
+					50: "#5daad3",
+					100: "#53a0c9",
+					200: "#4996bf",
+					300: "#3f8cb5",
+					400: "#3582ab",
+					500: "#2b78a1",
+					600: "#216e97",
+					700: "#17648d",
+					800: "#0d5a83",
+					900: "#035079",
+				},
+				secondary: {
+					50: "#b7b093",
+					100: "#ada689",
+					200: "#a39c7f",
+					300: "#999275",
+					400: "#8f886b",
+					500: "#857e61",
+					600: "#7b7457",
+					700: "#716a4d",
+					800: "#676043",
+					900: "#5d5639",
+				},
+				confirmation: {
+					50: "#547663",
+					100: "#4a6c59",
+					200: "#40624f",
+					300: "#365845",
+					400: "#2c4e3b",
+					500: "#224431",
+					600: "#183a27",
+					700: "#0e301d",
+					800: "#042613",
+					900: "#001c09",
+				},
+				warning: {
+					50: "#ffd67a",
+					100: "#ffcc70",
+					200: "#fbc266",
+					300: "#f1b85c",
+					400: "#e7ae52",
+					500: "#dda448",
+					600: "#d39a3e",
+					700: "#c99034",
+					800: "#bf862a",
+					900: "#b57c20",
+				},
+				destructive: {
+					50: "#dc4a40",
+					100: "#d24036",
+					200: "#c8362c",
+					300: "#be2c22",
+					400: "#b42218",
+					500: "#aa180e",
+					600: "#a00e04",
+					700: "#960400",
+					800: "#8c0000",
+					900: "#820000",
+				},
+			},
+```
